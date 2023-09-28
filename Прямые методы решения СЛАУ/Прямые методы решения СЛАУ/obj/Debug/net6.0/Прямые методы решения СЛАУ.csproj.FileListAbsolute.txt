@@ -1,0 +1,15 @@
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\Прямые методы решения СЛАУ.csproj.AssemblyReference.cache
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\Прямые методы решения СЛАУ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\Прямые методы решения СЛАУ.AssemblyInfoInputs.cache
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\Прямые методы решения СЛАУ.AssemblyInfo.cs
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\Прямые методы решения СЛАУ.csproj.CoreCompileInputs.cache
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\bin\Debug\net6.0\Прямые методы решения СЛАУ.exe
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\bin\Debug\net6.0\Прямые методы решения СЛАУ.deps.json
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\bin\Debug\net6.0\Прямые методы решения СЛАУ.runtimeconfig.json
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\bin\Debug\net6.0\Прямые методы решения СЛАУ.dll
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\bin\Debug\net6.0\Прямые методы решения СЛАУ.pdb
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\Прямые методы решения СЛАУ.dll
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\refint\Прямые методы решения СЛАУ.dll
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\Прямые методы решения СЛАУ.pdb
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\Прямые методы решения СЛАУ.genruntimeconfig.cache
+C:\Users\SonTi\source\repos\Прямые методы решения СЛАУ\Прямые методы решения СЛАУ\obj\Debug\net6.0\ref\Прямые методы решения СЛАУ.dll

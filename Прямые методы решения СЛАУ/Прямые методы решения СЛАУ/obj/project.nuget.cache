@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "3QiFha4Pl6AQFzeItXarcDbkATng7tixHS690sIyrw3cgg5f+Q4x2eimdrmjSBqP99Z2U1NqUB6kgfow7Lp0pQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SonTi\\source\\repos\\Прямые методы решения СЛАУ\\Прямые методы решения СЛАУ\\Прямые методы решения СЛАУ.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SonTi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\SonTi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\SonTi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\SonTi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}
