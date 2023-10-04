@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
-
+using Прямые_методы_решения_СЛАУ;
 
 namespace Com_Methods
 {
@@ -10,7 +10,19 @@ namespace Com_Methods
         //точность решения
         public static double EPS = 1e-15;
     }
-
+    class Tools
+    {
+        //относительная погрешность
+        public static double Relative_Error(Vector X, Vector x)
+        {
+            double s = 0.0;
+            for (int i = 0; i < X.N; i++)
+            {
+                s += Math.Pow(X.Elem[i] - x.Elem[i], 2);
+            }
+            return Math.Sqrt(s) / x.Norm();
+        }
+    }
     class Program
     {
         static void Main()
@@ -19,7 +31,7 @@ namespace Com_Methods
             {
                 //прямые методы: метод Гаусса, LU-разложение, QR-разложение
 
-                int N = 400;
+                int N = 10;
                 var A = new Matrix(N, N);
                 var X_true = new Vector(N);
 
@@ -28,14 +40,7 @@ namespace Com_Methods
                 {
                     for (int j = 0; j < N; j++)
                     {
-                        if (i != j)
-                        {
-                            A.Elem[i][j] = (1.0 + 0.1 * i + 0.2 * j);
-                        }
-                        else
-                        {
-                            A.Elem[i][j] = 100.0;
-                        }
+                            A.Elem[i][j] = 1.0/(2.0+i+j);
                     }
                     X_true.Elem[i] = 1;
                 }
@@ -61,17 +66,23 @@ namespace Com_Methods
                 var X = Solver2.Start_Solver(C);
                 stopwatch2.Stop();
 
-                double delta1 = (Y - X_true).Norm() / X_true.Norm();
-                double delta2 = (X - X_true).Norm() / X_true.Norm();
+                //вычисление числа обусловленности
+                Console.WriteLine("\nCond(A) = " + A.Cond_InfinityNorm() + "\n");
 
-                for (int i = 0; i < Y.N; i++) Console.WriteLine("X[{0}] = {1}", i + 1, Y.Elem[i]);
-                Console.WriteLine("\n");
-                for (int i = 0; i < X.N; i++) Console.WriteLine("X[{0}] = {1}", i + 1, X.Elem[i]);
+                Console.Write("Result for QR_Decomposition: ");
+                //X.Console_Write_Vector();
+                Console.WriteLine("\nError: {0}\n", Tools.Relative_Error(X, X_true));
 
-                Console.Write("LU_Decomposition time: "); Console.WriteLine(stopwatch1.ElapsedMilliseconds);
-                Console.Write("Householder time: "); Console.WriteLine(stopwatch2.ElapsedMilliseconds);
-                Console.Write("delta for LU_Decomposition: "); Console.WriteLine(delta1);
-                Console.Write("delta for Householder: "); Console.WriteLine(delta2);
+                Console.Write("Result for LU_Decomposition: ");
+                //Y.Console_Write_Vector();
+                Console.WriteLine("\nError: {0}\n", Tools.Relative_Error(Y, X_true));
+
+                //for (int i = 0; i < Y.N; i++) Console.WriteLine("X[{0}] = {1}", i + 1, Y.Elem[i]);
+                //Console.WriteLine("\n");
+                //for (int i = 0; i < X.N; i++) Console.WriteLine("X[{0}] = {1}", i + 1, X.Elem[i]);
+
+                //Console.Write("LU_Decomposition time: "); Console.WriteLine(stopwatch1.ElapsedMilliseconds);
+                //Console.Write("Householder time: "); Console.WriteLine(stopwatch2.ElapsedMilliseconds);
             }
             catch (Exception E)
             {
